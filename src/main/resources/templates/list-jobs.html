@@ -15,12 +15,14 @@
         <th:block th:each="job : ${jobs}">
         <tr>
             <td>
-                <p th:text="'ID: ' + ${job.id}"></p>
-                <p th:text="'Name: ' + ${job.name}"></p>
-                <p th:text="'Employer: ' + ${job.employer}"></p>
-                <p th:text="'Location: ' + ${job.location}"></p>
-                <p th:text="'Position: ' + ${job.positionType}"></p>
-                <p th:text="'Skill: ' + ${job.coreCompetency}"></p>
+                <ul>
+                    <li><b>ID: </b><i th:text="${job.id}"></i></li>
+                    <li><b>NAME: </b><i th:text="${job.name}"></i></li>
+                    <li><b>EMPLOYER: </b><i th:text="${job.employer}"></i></li>
+                    <li><b>LOCATION: </b><i th:text="${job.location}"></i></li>
+                    <li><b>POSITION: </b><i th:text="${job.positionType}"></i></li>
+                    <li><b>CORE COMPETENCY: </b><i th:text="${job.coreCompetency}"></i></li>
+                </ul>
             </td>
         </tr>
         </th:block>
